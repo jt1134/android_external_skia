@@ -353,6 +353,8 @@ ifeq ($(NO_FALLBACK_FONT),true)
 	LOCAL_CFLAGS += -DNO_FALLBACK_FONT
 endif
 
+LOCAL_CFLAGS += -fno-strict-aliasing
+
 LOCAL_LDLIBS += -lpthread
 
 LOCAL_MODULE:= libskia
